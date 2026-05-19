@@ -38,11 +38,11 @@ public class Algorithm1 {
 	private static int combineDigits(int a, int b, int c) {
 		//validation of the inputs
 		//logical operator: or || and &&, not !
-		if(a > 9 || a < 0 || b > 9 || b < 0 || c > 9 || c < 0) {
-			System.out.println("Your number shoud be single digit and non negative");
-			//throw new InvalidArgsExecption()
-			return 0;
-		}
+//		if(a > 9 || a < 0 || b > 9 || b < 0 || c > 9 || c < 0) {
+//			System.out.println("Your number shoud be single digit and non negative");
+//			//throw new InvalidArgsExecption()
+//			return 0;
+//		}
 		//if a is less than 10 and great than 0 ....
 		if(!(a <= 9 && a >= 0 && b <= 9 && b >= 0 && c <= 9 && c >= 0)){
 			//if all the condition are meet
