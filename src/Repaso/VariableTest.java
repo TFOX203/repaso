@@ -10,34 +10,19 @@ public class VariableTest {
 		System.out.println(result);
 		result = Calculator.sum((int)num1,num2);
 		
-		double result2 = num1/num2;
-		result2 = division(num1, num2);
+		double result2 = num1 /num2;
+		result2 = Calculator.division(num1, num2);
 		System.out.println(result2);
 		
-		System.out.println(modulus(3.2f,3));
+		System.out.println(Calculator.modulus(3.2f, 3));
+		
 		//reference variable
 		
-		boolean stop = false;
-		String color = "green";
-		if(color == "green") {
-			stop = false;
-		}
-		System.out.println(stop);
+		//polymorphism
+		Object obj = new Calculator();
+		Calculator cal = new Calculator();
+		
+		
 		
 	}
-
-	public static float modulus(float num1, int num2) {
-		// TODO Auto-generated method stub
-		return num1 % num2;
-	}
-	public static int sum(int num1, int num2) {
-		// TODO Auto-generated method stub
-		return num1 + num2;
-	}
-	
-	public static double division(double num1, double num2) {
-	
-		return num1 / num2;
-	}
-
 }
